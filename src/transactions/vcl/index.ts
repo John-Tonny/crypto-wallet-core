@@ -1,8 +1,7 @@
 import * as _ from 'lodash';
 import {Key} from '../../derivation';
-import { BTCTxProvider } from '../btc';
 
-export class VCLTxProvider extends BTCTxProvider {
+export class VCLTxProvider {
     lib = require('vircle-lib');
 
     selectCoins(
