@@ -1,9 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var bch_1 = require("./bch");
+var btc_1 = require("./btc");
+var eth_1 = require("./eth");
 var paths_1 = require("./paths");
+var xrp_1 = require("./xrp");
 var vcl_1 = require("./vcl");
 var derivers = {
-    VCL: new vcl_1.VclDeriver(),
+    BTC: new btc_1.BtcDeriver(),
+    BCH: new bch_1.BchDeriver(),
+    ETH: new eth_1.EthDeriver(),
+    XRP: new xrp_1.XrpDeriver(),
+    VCL: new vcl_1.VclDeriver()
 };
 var DeriverProxy = (function () {
     function DeriverProxy() {

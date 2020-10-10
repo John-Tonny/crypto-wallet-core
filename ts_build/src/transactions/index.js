@@ -1,8 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var bch_1 = require("./bch");
+var btc_1 = require("./btc");
+var erc20_1 = require("./erc20");
+var eth_1 = require("./eth");
+var eth_multisig_1 = require("./eth-multisig");
+var xrp_1 = require("./xrp");
 var vcl_1 = require("./vcl");
 var providers = {
-    VCL: new vcl_1.VCLTxProvider(),
+    BTC: new btc_1.BTCTxProvider(),
+    BCH: new bch_1.BCHTxProvider(),
+    ETH: new eth_1.ETHTxProvider(),
+    ERC20: new erc20_1.ERC20TxProvider(),
+    ETHMULTISIG: new eth_multisig_1.ETHMULTISIGTxProvider(),
+    XRP: new xrp_1.XRPTxProvider(),
+    VCL: new vcl_1.VCLTxProvider()
 };
 var TransactionsProxy = (function () {
     function TransactionsProxy() {

@@ -1,7 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var bch_1 = require("./bch");
+var btc_1 = require("./btc");
+var eth_1 = require("./eth");
+var xrp_1 = require("./xrp");
 var vcl_1 = require("./vcl");
 var validation = {
+    BTC: new btc_1.BtcValidation(),
+    BCH: new bch_1.BchValidation(),
+    ETH: new eth_1.EthValidation(),
+    XRP: new xrp_1.XrpValidation(),
     VCL: new vcl_1.VclValidation()
 };
 var ValidationProxy = (function () {

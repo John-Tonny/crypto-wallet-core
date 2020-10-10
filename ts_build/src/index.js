@@ -10,6 +10,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var BitcoreLib = __importStar(require("bitcore-lib"));
+exports.BitcoreLib = BitcoreLib;
+var BitcoreLibCash = __importStar(require("bitcore-lib-cash"));
+exports.BitcoreLibCash = BitcoreLibCash;
 var VircleLib = __importStar(require("vircle-lib"));
 exports.VircleLib = VircleLib;
 var web3_1 = __importDefault(require("web3"));

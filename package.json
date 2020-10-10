@@ -1,6 +1,6 @@
 {
   "name": "crypto-wallet-core",
-  "version": "8.20.4",
+  "version": "8.22.2",
   "description": "A multi-currency support library for address derivation, private key creation, and transaction creation",
   "main": "./ts_build/src/index.js",
   "types": "./ts_build/src/index.d.ts",
@@ -27,7 +27,9 @@
   "author": "Micah Riggan",
   "license": "MIT",
   "dependencies": {
-    "vircle-lib": "git+https://github.com/John-Tonny/vircle-lib",
+    "bitcore-lib": "^8.22.2",
+    "bitcore-lib-cash": "^8.22.2",
+    "vircle-lib": "git+https://git@github.com/John-Tonny/vircle-lib",
     "ethers": "4.0.37",
     "ripple-binary-codec": "0.2.6",
     "ripple-keypairs": "git+https://git@github.com/bitpay/ripple-keypairs.git#8d3a4643a8ddfce8222786e1e5a3e85a89a5b7f5",
